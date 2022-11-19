@@ -12,11 +12,12 @@ import {
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
 import LoginPage from './Login';
+import RegisterPage from './Signup';
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <LoginPage />
+      <RegisterPage/>
     </ChakraProvider>
   );
 }
