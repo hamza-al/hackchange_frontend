@@ -80,8 +80,6 @@ export default function LoginPage(){
                     name="password"
                     type="password"
                     variant="filled"
-                    bg="gray.200"
-                    color="gray.600"
                     validate={(value) => {
                       let error;
 
