@@ -1,12 +1,38 @@
+import { useEffect } from "react";
 import { Icon, LockIcon } from "@chakra-ui/icons";
-import { Button, Center, FormControl, FormErrorMessage, FormLabel, Heading, Input, Stack, Text , VStack} from "@chakra-ui/react";
+import { border, Button, Center, FormControl, FormErrorMessage, FormLabel, Heading, Input, Stack, Text , VStack} from "@chakra-ui/react";
 import { Field, Form, Formik } from "formik";
 import { Link } from "react-router-dom";
+import { useMutation, gql, useQuery } from "@apollo/client";
+import { useNavigate } from "react-router-dom";
 
 
 export default function LoginPage(){
+  const loginMut = gql`
+    mutation login($password: String!, $email: String!) {
+      loginUser(password: $password, email: $email) {
+        token
+      }
+    }
+  `
+
+  const [login, { data, loading, error }] = useMutation(loginMut);
+
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    if (data && !loading){
+      localStorage.setItem("token", data.login)
+      navigate("/explore")
+    }
+
+    if (error){
+      alert("Incorrect!")
+    }
+  }, [data, loading, error])
+
     return(
-        <Center h="100vh" bg='#0b0f25'>
+        <Center overflowY={'hidden'}  h="100vh" bg='#0b0f25'>
             <Stack bg='white' p='20' boxShadow={'md'}>
             <Heading as='h1' color='#0b0f25' >
                 Log in.
@@ -22,25 +48,33 @@ export default function LoginPage(){
             rememberMe: false
           }}
           onSubmit={(values) => {
-            alert(JSON.stringify(values, null, 2));
+            login({
+              variables: {
+                email: values.email,
+                password: values.password
+              }
+            })
           }}
         >
           {({ handleSubmit, errors, touched }) => (
             <form onSubmit={handleSubmit}>
               <VStack spacing={4} align="flex-start">
                 <FormControl>
-                  <FormLabel htmlFor="email">Email Address</FormLabel>
+                  <FormLabel color={'#0b0f25'} htmlFor="email" >Email Address</FormLabel>
                   <Field
                     as={Input}
                     id="email"
                     name="email"
                     type="email"
                     variant="filled"
+                    bg="gray.200"
+                    color="gray.600"
                   />
                 </FormControl>
                 <FormControl isInvalid={!!errors.password && touched.password}>
-                  <FormLabel htmlFor="password">Password</FormLabel>
+                  <FormLabel color={'#0b0f25'} htmlFor="password"  >Password</FormLabel>
                   <Field
+                  
                     as={Input}
                     id="password"
                     name="password"
