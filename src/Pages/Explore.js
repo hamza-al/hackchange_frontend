@@ -19,13 +19,8 @@ function Explore() {
         >
         <Heading lineHeight='tall'>
             <Highlight
-<<<<<<< HEAD
                 query={[ 'connect']}
                 styles={{ px: '2', py: '1', color:'teal.300' }}
-=======
-                query={['available', 'mentors', 'connect']}
-                styles={{ px: '2', py: '1', borderRadius: '10px', bg: 'teal.100' }}
->>>>>>> 405f0cbed84afbd77b73c322bb0fa7169841deda
             >
             
             Connect with the following mentors who are available to help!
@@ -41,7 +36,6 @@ function Explore() {
           alignItems="start"
           justifyContent="center"
         >
-<<<<<<< HEAD
            <Stack paddingRight={200} paddingLeft={210} pb={'10'}  direction={'column'} justify={'center'} alignItems='start' color='grey' spacing={'3'}>
                 <Text fontWeight={'bold'} fontSize={'large'} color='white'>
                     Which skills would you like to learn
@@ -70,9 +64,7 @@ function Explore() {
           
           
             <SimpleGrid columns={4} spacing={0} paddingRight={200} paddingLeft={200}>
-=======
-            <SimpleGrid columns={4} spacing={0} paddingRight={200} paddingLeft={200} border="white">
->>>>>>> 405f0cbed84afbd77b73c322bb0fa7169841deda
+            {/* <SimpleGrid columns={4} spacing={0} paddingRight={200} paddingLeft={200} border="white"> */}
 
 
             <Mentor name={"Bimal"} img={"https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80%22%7D"}
