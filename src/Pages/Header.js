@@ -8,7 +8,7 @@ function Header() {
   const [isNotSmall] = useMediaQuery("(min-width: 1100px)");
 
   return (
-    <div  style={ isNotSmall ? { height: "100vh", display: 'flex', backgroundColor:'#0b0f25'}: { display: 'flex',flexDirection:'column'}}>
+    <div  style={ isNotSmall ? { height: "100vh", display: 'flex', backgroundColor:'#0b0f25',overflowX:'hidden'}: { display: 'flex',flexDirection:'column'}}>
       <Flex
       
         direction={isNotSmall ? "row" : "column"}

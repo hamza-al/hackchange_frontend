@@ -1,12 +1,12 @@
 import { Icon, LockIcon } from "@chakra-ui/icons";
-import { Button, Center, FormControl, FormErrorMessage, FormLabel, Heading, Input, Stack, Text , VStack} from "@chakra-ui/react";
+import { border, Button, Center, FormControl, FormErrorMessage, FormLabel, Heading, Input, Stack, Text , VStack} from "@chakra-ui/react";
 import { Field, Form, Formik } from "formik";
 import { Link } from "react-router-dom";
 
 
 export default function LoginPage(){
     return(
-        <Center h="100vh" bg='#0b0f25'>
+        <Center overflowY={'hidden'}  h="100vh" bg='#0b0f25'>
             <Stack bg='white' p='20' boxShadow={'md'}>
             <Heading as='h1' color='#0b0f25' >
                 Log in.
@@ -29,7 +29,7 @@ export default function LoginPage(){
             <form onSubmit={handleSubmit}>
               <VStack spacing={4} align="flex-start">
                 <FormControl>
-                  <FormLabel htmlFor="email">Email Address</FormLabel>
+                  <FormLabel color={'#0b0f25'} htmlFor="email">Email Address</FormLabel>
                   <Field
                     as={Input}
                     id="email"
@@ -39,8 +39,9 @@ export default function LoginPage(){
                   />
                 </FormControl>
                 <FormControl isInvalid={!!errors.password && touched.password}>
-                  <FormLabel htmlFor="password">Password</FormLabel>
+                  <FormLabel color={'#0b0f25'} htmlFor="password">Password</FormLabel>
                   <Field
+                  
                     as={Input}
                     id="password"
                     name="password"
