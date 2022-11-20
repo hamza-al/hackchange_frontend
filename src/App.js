@@ -28,7 +28,7 @@ function App() {
         <Route  element={<RegisterPage/>} path="/register" />
         <Route  element={<LoginPage/>} path="/login" />
         <Route element ={<Explore></Explore>} path="/explore"/>
-        <Route element = {<ProfilePage></ProfilePage>} path="/profilepage"/>
+        <Route element ={<ProfilePage/>} path="/profile"/>
      </Routes>
     </Router>
     </ChakraProvider>
