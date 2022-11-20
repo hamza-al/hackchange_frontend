@@ -6,7 +6,7 @@ import NavBar from "./Navbar";
 export default function LandingPage(){
     console.log('hello')
     return(
-        <Box    bg={'#0b0f25'}>
+        <Box  overflowY={'hidden'}     bg={'#0b0f25'}>
             <NavBar></NavBar>
             <Header></Header>
             
