@@ -15,6 +15,7 @@ import LoginPage from './Pages/Login';
 import RegisterPage from './Pages/Signup';
 import Header from './Pages/Header';
 import LandingPage from './Pages/LandingPage';
+import AddTags from './Pages/AddTags';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Explore from './Pages/Explore';
 
@@ -27,6 +28,7 @@ function App() {
         <Route  element={<RegisterPage/>} path="/register" />
         <Route  element={<LoginPage/>} path="/login" />
         <Route element ={<Explore></Explore>} path="/explore"/>
+        <Route  element={<AddTags />} path="/complete-profile" />
      </Routes>
     </Router>
     </ChakraProvider>
