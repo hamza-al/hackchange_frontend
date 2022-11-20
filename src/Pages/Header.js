@@ -39,7 +39,6 @@ function Header() {
           
         </Box> 
         
-        
       </Flex>
       
       { <Img p={50} src="Saly-26.png"  boxSize='700px'></Img> }

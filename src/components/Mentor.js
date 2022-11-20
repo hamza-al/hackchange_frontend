@@ -11,10 +11,10 @@ export const Mentor = (props)=>{
 
     return (
 
-        <div  style={ isNotSmall ? { height: "100vh", display: 'flex', backgroundColor:'#0b0f25'}: { display: 'flex',flexDirection:'column'}}>
+        <div  style={ isNotSmall ? { height: "65vh", display: 'flex', backgroundColor:'#0b0f25'}: { display: 'flex',flexDirection:'column'}}>
 
     <Flex
-  p={50}
+  p={5}
   w="full"
   alignItems="center"
   justifyContent="center"
