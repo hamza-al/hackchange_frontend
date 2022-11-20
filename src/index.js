@@ -4,14 +4,27 @@ import * as ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
+import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
 
+const client = new ApolloClient({
+  uri: process.env.NODE_ENV === "development" ? "http://localhost:8080/graphql" : "https://our-hosted-server/graphql",
+  cache: new InMemoryCache()
+})
+
 root.render(
   <StrictMode>
+<<<<<<< HEAD
     <ColorModeScript initialColorMode='light' />
     <App />
+=======
+    <ApolloProvider client={client} >
+      <ColorModeScript />
+      <App />
+    </ApolloProvider>
+>>>>>>> 405f0cbed84afbd77b73c322bb0fa7169841deda
   </StrictMode>
 );
 
