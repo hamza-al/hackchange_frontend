@@ -1,4 +1,4 @@
-import { Box, Flex, useMediaQuery, Text, Image, color, Img, Button, Icon, chakra} from "@chakra-ui/react";
+import { Box, Flex, useMediaQuery, Text, Image, color, Img, Button, Icon, chakra, Highlight} from "@chakra-ui/react";
 import { MdHeadset, EmailIcon, SearchIcon} from '@chakra-ui/icons'
 import { MdLocationOn } from 'react-icons/md'
 
@@ -14,7 +14,7 @@ export const Mentor = (props)=>{
         <div  style={ isNotSmall ? { height: "65vh", display: 'flex', backgroundColor:'#0b0f25'}: { display: 'flex',flexDirection:'column'}}>
 
     <Flex
-  p={5}
+  p={2}
   w="full"
   alignItems="center"
   justifyContent="center"
@@ -39,9 +39,16 @@ export const Mentor = (props)=>{
       alt="avatar"
     />
 
-    <Flex alignItems="center" px={6} py={3} bg="gray.900">
-      <chakra.h1 mx={3} color="white" fontWeight="bold" fontSize="lg">
-        Focusing
+    <Flex alignItems="start" px={6} py={3} bg="gray.900">
+      <chakra.h1 mx={0} color="white" fontWeight="bold" fontSize="lg">
+        {<Highlight
+                query={[ 'Cost:']}
+                styles={{ px: '2', py: '1', color:'teal.300' }}
+            >
+            
+            Cost: 
+            </Highlight>}
+        {Math.floor(Math.random() * 101)} credits
       </chakra.h1>
     </Flex>
 

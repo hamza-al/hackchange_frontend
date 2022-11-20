@@ -24,11 +24,11 @@ function Header() {
             bgGradient={"linear(to-r,teal.400, cyan.400)"}
             bgClip={"text"}
           >
-           Welcome to nameless
+           Welcome to Helpr
           </Text>
           <Text fontSize={isNotSmall ? "xl" : "m" } color='white'>
             {" "}
-            Tutorize is a platform that aims to push people to help and learn from each other. By rewarding members who help others, Tutorize uses teaching as its currency! Help others to recieve tokens you can then redeem to recieve help from others
+            Helpr is a platform that aims to push people to help and learn from each other. By rewarding members who help others, Helpr uses teaching as its currency! Help others to recieve tokens you can then redeem to recieve help from others
             {" "}
           </Text>
           <Button mt={30} _hover={{color:'#0b0f25', backgroundColor:'white'}} color={'white'} variant={"outline"}  >

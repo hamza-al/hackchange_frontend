@@ -12,7 +12,7 @@ export default function RegisterPage(){
                 Register
             </Heading>
             <Text fontSize={'large'} color='grey'>
-                Welcome to tutorize! We're happy to have you aboard
+                Welcome to Helpr! We're happy to have you aboard
             </Text>
 
             <Formik
