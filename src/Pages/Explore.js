@@ -4,15 +4,13 @@ import {Mentor} from "../components/Mentor"
 
 
 function Explore() {
-  const [isNotSmall] = useMediaQuery("(min-width: 1100px)");
 
-  return (
-    <div  style={ isNotSmall ? { height: "100vh", display: 'flex', backgroundColor:'#0b0f25'}: { display: 'flex',flexDirection:'column'}}>
-
-    
-
-    </div>
-  );
+  return(
+    <Box    bg={'#0b0f25'}>
+        <Mentor></Mentor>
+        
+    </Box>
+)
 }
 
 export default Explore;

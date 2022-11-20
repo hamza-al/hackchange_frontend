@@ -7,12 +7,13 @@ import React from "react";
 
 
 export const Mentor = (props)=>{
+    const [isNotSmall] = useMediaQuery("(min-width: 1100px)");
+
+    return (
+
+        <div  style={ isNotSmall ? { height: "100vh", display: 'flex', backgroundColor:'#0b0f25'}: { display: 'flex',flexDirection:'column'}}>
 
     <Flex
-  bg="#edf3f8"
-  _dark={{
-    bg: "#3e3e3e",
-  }}
   p={50}
   w="full"
   alignItems="center"
@@ -112,7 +113,9 @@ export const Mentor = (props)=>{
       </Flex>
     </Box>
   </Box>
-</Flex>;
+</Flex>
+</div>
+    );
 
 
 }
