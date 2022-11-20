@@ -59,7 +59,7 @@ const MenuLinks = ({ isOpen }) => {
           {" "}
           <Button _hover={{color:'#0b0f25', backgroundColor:'white'}} color={'white'} variant={"outline"}  >
             
-              About us
+              Contact us
             
           </Button>
         </MenuItem>
