@@ -19,6 +19,7 @@ import AddTags from './Pages/AddTags';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Explore from './Pages/Explore';
 import ProfilePage from './Pages/ProfilePage';
+import SessionPage from './Pages/session/Session';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route element ={<Explore></Explore>} path="/explore"/>
         <Route  element={<AddTags />} path="/complete-profile" />
         <Route element ={<ProfilePage/>} path="/profile"/>
+        <Route element ={<SessionPage/>} path="/session"/>
      </Routes>
     </Router>
     </ChakraProvider>
