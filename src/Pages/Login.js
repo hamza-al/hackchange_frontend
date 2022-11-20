@@ -66,9 +66,8 @@ export default function LoginPage(){
                     id="email"
                     name="email"
                     type="email"
-                    variant="filled"
-                    bg="gray.200"
-                    color="gray.600"
+                    variant="outline"
+                    
                   />
                 </FormControl>
                 <FormControl isInvalid={!!errors.password && touched.password}>
@@ -79,7 +78,8 @@ export default function LoginPage(){
                     id="password"
                     name="password"
                     type="password"
-                    variant="filled"
+                    variant="outline"
+                    
                     validate={(value) => {
                       let error;
 
