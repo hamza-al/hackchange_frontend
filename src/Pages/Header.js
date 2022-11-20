@@ -26,7 +26,7 @@ function Header() {
             bgGradient={"linear(to-r,teal.400, cyan.400)"}
             bgClip={"text"}
           >
-           Welcome to Helpr
+           Welcome to nameless
           </Text>
           <Text fontSize={isNotSmall ? "xl" : "m" } color='white'>
             {" "}
