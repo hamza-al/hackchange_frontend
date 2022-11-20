@@ -34,18 +34,17 @@ function Explore() {
             <SimpleGrid columns={4} spacing={0} paddingRight={200} paddingLeft={200} border="white">
 
 
-                <Mentor name={"name"} img={"https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"} desc={"react dev"} loc={"cali"} email={"da@gmail.com"}></Mentor>
-                {/* <Mentor></Mentor>
-                <Mentor></Mentor>
-                <Mentor></Mentor>
-                <Mentor></Mentor>
-                <Mentor></Mentor>
-                <Mentor></Mentor>
-                <Mentor></Mentor>
-                <Mentor></Mentor>
-                <Mentor></Mentor>
-                <Mentor></Mentor>
-                <Mentor></Mentor> */}
+            <Mentor name={"Bimal"} img={"https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80%22%7D"}
+                desc={"Math Tutor"} loc={"Calgary"} email={"bim2323@gmail.com"}></Mentor>
+                <Mentor name={"Yen Ben"} img={"https://images.unsplash.com/photo-1581382575275-97901c2635b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80%22%7D"} 
+                desc={"React dev"} loc={"Toronto"} email={"yen4903@gmail.com"}></Mentor>
+                <Mentor name={"Yoda mashi"} img={"https://images.unsplash.com/photo-1567784177951-6fa58317e16b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80%22%7D"} 
+                desc={"React dev"} loc={"Toronto"} email={"yidj445@gmail.com"}></Mentor>
+                <Mentor name={"Emmet Bred"} img={"https://images.unsplash.com/photo-1583864697784-a0efc8379f70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80%22%7D"} 
+                desc={"Mucisian"} loc={"Mumbai"} email={"emmet5033@gmail.com"}></Mentor>
+                <Mentor name={"Lionel messi"} img={"https://images.unsplash.com/photo-1615109398623-88346a601842?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80%22%7D"} 
+                desc={"soccer"} loc={"Argentina"} email={"lionel3435@gmail.com"}></Mentor>
+
 
             </SimpleGrid>
 
