@@ -33,6 +33,9 @@ function Explore() {
         >
             <SimpleGrid columns={4} spacing={0} paddingRight={200} paddingLeft={200} border="white">
 
+
+                <Mentor name={"name"} img={"https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"} desc={"react dev"} loc={"cali"} email={"da@gmail.com"}></Mentor>
+                {/* <Mentor></Mentor>
                 <Mentor></Mentor>
                 <Mentor></Mentor>
                 <Mentor></Mentor>
@@ -42,9 +45,7 @@ function Explore() {
                 <Mentor></Mentor>
                 <Mentor></Mentor>
                 <Mentor></Mentor>
-                <Mentor></Mentor>
-                <Mentor></Mentor>
-                <Mentor></Mentor>
+                <Mentor></Mentor> */}
 
             </SimpleGrid>
 

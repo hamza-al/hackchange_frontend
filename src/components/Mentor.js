@@ -9,6 +9,12 @@ import React from "react";
 export const Mentor = (props)=>{
     const [isNotSmall] = useMediaQuery("(min-width: 1100px)");
 
+    const name = props.name;
+    const img = props.img;
+    const desc = props.desc;
+    const loc = props.loc;
+    const email = props.email;
+
     return (
 
         <div  style={ isNotSmall ? { height: "65vh", display: 'flex', backgroundColor:'#0b0f25'}: { display: 'flex',flexDirection:'column'}}>
@@ -35,7 +41,7 @@ export const Mentor = (props)=>{
       h={56}
       fit="cover"
       objectPosition="center"
-      src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+      src={img}
       alt="avatar"
     />
 
@@ -54,7 +60,7 @@ export const Mentor = (props)=>{
           color: "white",
         }}
       >
-        Patterson johnson
+        {name}
       </chakra.h1>
 
       <chakra.p
@@ -64,24 +70,8 @@ export const Mentor = (props)=>{
           color: "gray.400",
         }}
       >
-        Full Stack maker & UI / UX Designer , love hip hop music Author of
-        Building UI.
+        {desc}
       </chakra.p>
-
-      <Flex
-        alignItems="center"
-        mt={4}
-        color="gray.700"
-        _dark={{
-          color: "gray.200",
-        }}
-      >
-        <Icon as={SearchIcon} h={6} w={6} mr={2} />
-
-        <chakra.h1 px={2} fontSize="sm">
-          Choc UI
-        </chakra.h1>
-      </Flex>
 
       <Flex
         alignItems="center"
@@ -94,7 +84,7 @@ export const Mentor = (props)=>{
         <Icon as={MdLocationOn} h={6} w={6} mr={2} />
 
         <chakra.h1 px={2} fontSize="sm">
-          California
+          {loc}
         </chakra.h1>
       </Flex>
       <Flex
@@ -108,7 +98,7 @@ export const Mentor = (props)=>{
         <Icon as={EmailIcon} h={6} w={6} mr={2} />
 
         <chakra.h1 px={2} fontSize="sm">
-          patterson@example.com
+          {email}
         </chakra.h1>
       </Flex>
     </Box>
