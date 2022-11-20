@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export default function RegisterPage(){
     return(
-        <Center h="100vh" bg='#0b0f25'>
+        <Center overflowY={'hidden'}  h="100vh" bg='#0b0f25'>
             <Stack bg='white' p='20' boxShadow={'md'}>
             <Heading as='h1' color='#0b0f25' >
                 Register

@@ -2,13 +2,11 @@ import { Box, Flex, useMediaQuery, Text, Image, color, Img, Button } from "@chak
 import React from "react";
 
 
-
-
 function Header() {
   const [isNotSmall] = useMediaQuery("(min-width: 1100px)");
 
   return (
-    <div  style={ isNotSmall ? { height: "100vh", display: 'flex', backgroundColor:'#0b0f25'}: { display: 'flex',flexDirection:'column'}}>
+    <div  style={ isNotSmall ? { height: "100vh", display: 'flex', backgroundColor:'#0b0f25',overflowX:'hidden'}: { display: 'flex',flexDirection:'column'}}>
       <Flex
       
         direction={isNotSmall ? "row" : "column"}
@@ -26,7 +24,7 @@ function Header() {
             bgGradient={"linear(to-r,teal.400, cyan.400)"}
             bgClip={"text"}
           >
-           Welcome to Helpr
+           Welcome to nameless
           </Text>
           <Text fontSize={isNotSmall ? "xl" : "m" } color='white'>
             {" "}
