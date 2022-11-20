@@ -44,6 +44,20 @@ function Explore() {
                 desc={"Mucisian"} loc={"Mumbai"} email={"emmet5033@gmail.com"}></Mentor>
                 <Mentor name={"Lionel messi"} img={"https://images.unsplash.com/photo-1615109398623-88346a601842?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80%22%7D"} 
                 desc={"soccer"} loc={"Argentina"} email={"lionel3435@gmail.com"}></Mentor>
+                <Mentor name={"Magnus Carlsen"} img={"https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80%22%7D"} 
+                desc={"Chess"} loc={"Denmark"} email={"mg4343@gmail.com"}></Mentor>
+                <Mentor name={"Kartik"} img={"https://images.unsplash.com/photo-1548449112-96a38a643324?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80%22%7D"} 
+                desc={"Developer"} loc={"Surat"} email={"kart3493@gmail.com"}></Mentor>
+                <Mentor name={"Mars Jupitor"} img={"https://plus.unsplash.com/premium_photo-1667511317053-4860f9513da5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80%22%7D"} 
+                desc={"Astronomer"} loc={"California"} email={"mar435jupi4903@gmail.com"}></Mentor>
+                <Mentor name={"Krushang Modi"} img={"https://images.unsplash.com/photo-1480429370139-e0132c086e2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80%22%7D"} 
+                desc={"Broker"} loc={"New York"} email={"modi453@gmail.com"}></Mentor>
+                <Mentor name={"Sappy"} img={"https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80%22%7D"} 
+                desc={"Athlete"} loc={"Amsterdem"} email={"sapp455@gmail.com"}></Mentor>
+                <Mentor name={"Cody Bran"} img={"https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80%22%7D"} 
+                desc={"Dietician"} loc={"London"} email={"cody5u45@gmail.com"}></Mentor>
+                <Mentor name={"Charlie Munger"} img={"https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80%22%7D"} 
+                desc={"Investor"} loc={"Delhi"} email={"charle343@gmail.com"}></Mentor>
 
 
             </SimpleGrid>
