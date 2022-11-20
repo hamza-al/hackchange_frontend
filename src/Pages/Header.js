@@ -2,8 +2,6 @@ import { Box, Flex, useMediaQuery, Text, Image, color, Img, Button } from "@chak
 import React from "react";
 
 
-
-
 function Header() {
   const [isNotSmall] = useMediaQuery("(min-width: 1100px)");
 

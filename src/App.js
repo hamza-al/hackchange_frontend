@@ -16,6 +16,7 @@ import RegisterPage from './Pages/Signup';
 import Header from './Pages/Header';
 import LandingPage from './Pages/LandingPage';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import Explore from './Pages/Explore';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route  element={<LandingPage/>} path="/" />
         <Route  element={<RegisterPage/>} path="/register" />
         <Route  element={<LoginPage/>} path="/login" />
+        <Route element ={<Explore></Explore>} path="/explore"/>
      </Routes>
     </Router>
     </ChakraProvider>
