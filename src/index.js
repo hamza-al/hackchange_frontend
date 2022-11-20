@@ -16,15 +16,10 @@ const client = new ApolloClient({
 
 root.render(
   <StrictMode>
-<<<<<<< HEAD
-    <ColorModeScript initialColorMode='light' />
-    <App />
-=======
     <ApolloProvider client={client} >
       <ColorModeScript />
       <App />
     </ApolloProvider>
->>>>>>> 405f0cbed84afbd77b73c322bb0fa7169841deda
   </StrictMode>
 );
 
