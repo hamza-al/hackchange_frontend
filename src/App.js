@@ -11,13 +11,15 @@ import {
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
-import LoginPage from './Login';
-import RegisterPage from './Signup';
+import LoginPage from './Pages/Login';
+import RegisterPage from './Pages/Signup';
+import Header from './Pages/Header';
+import LandingPage from './Pages/LandingPage';
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <RegisterPage/>
+      <LandingPage/>
     </ChakraProvider>
   );
 }
