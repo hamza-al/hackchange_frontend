@@ -1,6 +1,7 @@
 import { Icon, LockIcon } from "@chakra-ui/icons";
 import { Button, Center, FormControl, FormErrorMessage, FormLabel, Heading, Input, Stack, Text , VStack} from "@chakra-ui/react";
 import { Field, Form, Formik } from "formik";
+import { Link } from "react-router-dom";
 
 
 export default function RegisterPage(){
@@ -90,7 +91,7 @@ export default function RegisterPage(){
                 <Text as={'div'} textAlign='center'>
                     <span> Already have a account? </span>
                     <Button color={'#0b0f25'} variant='link'>
-                         Log in
+                         <Link to={'/../login'}>Log in</Link>
                     </Button>
                 </Text>
 

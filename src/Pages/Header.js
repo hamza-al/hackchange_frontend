@@ -8,7 +8,7 @@ function Header() {
   const [isNotSmall] = useMediaQuery("(min-width: 1100px)");
 
   return (
-    <div  style={ isNotSmall ? { height: "100vh", display: 'flex', backgroundColor:'#0b0f25'}: { height: "100vh", display: 'block',}}>
+    <div  style={ isNotSmall ? { height: "100vh", display: 'flex', backgroundColor:'#0b0f25'}: { display: 'flex',flexDirection:'column'}}>
       <Flex
       
         direction={isNotSmall ? "row" : "column"}
@@ -26,7 +26,7 @@ function Header() {
             bgGradient={"linear(to-r,teal.400, cyan.400)"}
             bgClip={"text"}
           >
-           Welcome to Tutorize!
+           Welcome to Helpr
           </Text>
           <Text fontSize={isNotSmall ? "xl" : "m" } color='white'>
             {" "}

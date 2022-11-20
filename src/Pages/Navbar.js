@@ -1,12 +1,13 @@
 import React from "react";
 import { Flex, Box, Stack, Text, Spacer, Button } from "@chakra-ui/react";
-
+import { Link } from "react-router-dom";
 import {
   FaSun,
   FaMoon,
   FaTimes,
   FaEllipsisH,
   FaPaperPlane,
+  FaUser,
 } from "react-icons/fa";
 
 const NavBar = (props) => {
@@ -29,7 +30,7 @@ const NavBar = (props) => {
 const MenuToggle = ({ toggle, isOpen }) => {
   return (
     <Box display={{ base: "block", md: "none" }} onClick={toggle}>
-      {isOpen ? <FaTimes /> : <FaEllipsisH />}
+      {isOpen ? <FaTimes color="white" /> : <FaEllipsisH color="white"/>}
     </Box>
   );
 };
@@ -66,8 +67,8 @@ const MenuLinks = ({ isOpen }) => {
         <MenuItem>
           {" "}
           <Button _hover={{color:'#0b0f25', backgroundColor:'white'}} color={'white'} variant={"outline"}  >
-            
-              Log in
+            <Link to={'login'}>Log in</Link>
+              
             
           </Button>
         </MenuItem>
@@ -76,9 +77,9 @@ const MenuLinks = ({ isOpen }) => {
         <Button  _hover={{color:'#0b0f25', backgroundColor:'white'}} color={'white'} bgGradient={"linear(to-r,teal.400, cyan.400)"}>
             <Box mr={2}>
               {" "}
-              <FaPaperPlane />{" "}
+              <FaUser />{" "}
             </Box>
-            Register
+            <Link to={'register'}>Register</Link>
           </Button>
           
         </MenuItem>

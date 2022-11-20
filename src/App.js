@@ -15,11 +15,18 @@ import LoginPage from './Pages/Login';
 import RegisterPage from './Pages/Signup';
 import Header from './Pages/Header';
 import LandingPage from './Pages/LandingPage';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <LandingPage/>
+      <Router>
+      <Routes>
+        <Route  element={<LandingPage/>} path="/" />
+        <Route  element={<RegisterPage/>} path="/register" />
+        <Route  element={<LoginPage/>} path="/login" />
+     </Routes>
+    </Router>
     </ChakraProvider>
   );
 }
