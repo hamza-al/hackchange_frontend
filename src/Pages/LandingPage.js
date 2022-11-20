@@ -1,4 +1,5 @@
 import { Box } from "@chakra-ui/react";
+import { Mentor } from "../components/Mentor";
 import Header from "./Header";
 import NavBar from "./Navbar";
 
